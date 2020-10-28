@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
+
+    <!-- responsividade -->
+    <link rel="stylesheet" href="./style/responsive.css">
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>NETFLIX CLONE</title>
 </head>
 <body>
    <header class="header">
        <div class="container">
-           <h2>NETFLIX</h2>
+           <h2 class="logo">NETFLIX</h2>
            <nav class="nav">
                <a href="#">Ínicio</a>
                <a href="#">Séries</a>
@@ -18,5 +26,88 @@
            </nav>
        </div>  
    </header> 
+
+   <main class="main">
+       <div class="filme-principal">
+            <div class="container">
+                <h3 class='titulo'>THE LAST KINGDOM</h3>
+                <p class="descricao">
+                    A show of heroic deeds and epic battles with a thematic depth that embraces politics, 
+                    religion, warfare, courage, love, loyalty and our universal search for identity. 
+                    Combining real historical figures and events with fictional characters, it is the 
+                    story of how a people combined their strength under one of the most iconic kings of history 
+                    in order to reclaim their land for themselves and build a place they call home.
+                </p>
+                <div class="botoes">
+                    <button role='button' id="myBtn" class='botao'>
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button onclick="window.open('https://www.themoviedb.org/tv/63333-the-last-kingdom')" role='button' class='botao'>
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇOES
+                    </button>   
+                </div>
+            </div>
+       </div>
+   </main>
+
+   <div class="carousel-filmes">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="/resources/img/minis/family-guy-mini.jpg" alt="" class="box-filme">
+        </div>
+        <div class="item">
+            <img src="/resources/img/minis/ncis-los-angeles-mini.jpg" alt="" class="box-filme">
+        </div>
+        <div class="item">
+            <img src="/resources/img/minis/start-wars-the-mandalorian-mini.jpg" alt="" class="box-filme">
+        </div>
+        <div class="item">
+            <img src="/resources/img/minis/supernatural-mini.jpg" alt="" class="box-filme">
+        </div>
+        <div class="item">
+            <img src="/resources/img/minis/the-good-doctor-mini.jpg" alt="" class="box-filme">
+        </div>
+        <div class="item">
+            <img src="/resources/img/minis/the-simpsons-mini.jpg" alt="" class="box-filme">
+        </div>
+        <div class="item">
+            <img src="/resources/img/minis/the-walkin-dead-world-beyond-mini.jpg" alt="" class="box-filme">
+        </div>
+        <div class="item">
+            <img src="/resources/img/minis/the-walking-dead-fear-mini.jpg" alt="" class="box-filme">
+        </div>
+        <div class="item">
+            <img src="/resources/img/minis/this-is-us-mini.jpg" alt="" class="box-filme">
+        </div>
+        <div class="item">
+            <img src="/resources/img/minis/we-are-who-we-are-mini.jpg" alt="" class="box-filme">
+        </div>
+    </div>
+   </div>
+   
+     <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+        <iframe 
+            id="myModalVideo" class="myModalVideo" width="100%" height="480" 
+            src="https://www.youtube.com/embed/JEZodHd2NZE" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+   <!-- fontawesome js -->
+   <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+
+   <!-- owl js -->
+   <script src="js/owl-carousel/jquery.min.js"></script>
+   <script src="js/owl-carousel/owl.carousel.min.js"></script>
+   <script src="js/owl-carousel/setup.js"></script>
+
 </body>
 </html>
